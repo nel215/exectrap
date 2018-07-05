@@ -1,6 +1,6 @@
 # exectrap
 
-Send ctrl-p twice to pts to resolve conflict detach keys of docker.
+Convert ctrl-p into ctrl-p + ctrl-@ and send to pts to resolve conflict detach keys of docker.
 
 ## Usage
 
