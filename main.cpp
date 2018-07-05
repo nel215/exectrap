@@ -61,7 +61,7 @@ int main(int argc, char **argv) {
         const char codeDLE = 0x10;  // ctrl-p
         if (nread == 1 && buf[0] == codeDLE) {
           nread = 2;
-          buf[1] = 16;
+          buf[1] = 0;  // ctrl-@
         }
 
         if (write(ptyMaster, buf, nread) != nread) break;
