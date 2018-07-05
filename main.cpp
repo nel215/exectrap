@@ -71,7 +71,7 @@ int main(int argc, char **argv) {
       // child
       char buf[bufSize];
       for (;;) {
-        auto nread = read(ptyMaster, buf, bufSize)
+        auto nread = read(ptyMaster, buf, bufSize);
         if (nread <= 0) break;
 
         if (write(STDOUT_FILENO, buf, nread) != nread) break;
