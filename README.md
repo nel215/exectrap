@@ -5,7 +5,7 @@ Send ctrl-p twice to pts to resolve conflict detach keys of docker.
 ## Usage
 
 ```
-$ exectrap docker run --rm -i -t busybox /bin/bash
+$ exectrap docker run --rm -i -t busybox /bin/sh
 # echo hello
 hello
 # echo hello  # type ctrl-p
