@@ -23,7 +23,7 @@ def get_cmd():
     buf = array.array('h', [0, 0, 0, 0])
     fcntl.ioctl(0, termios.TIOCGWINSZ, buf, True)
 
-    cmd = 'stty rows {} cols {}'.format(buf[0], buf[1])
+    cmd = ' stty rows {} cols {}'.format(buf[0], buf[1])
     return cmd
 
 
