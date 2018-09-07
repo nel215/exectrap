@@ -18,7 +18,7 @@ def spawn(argv, master_read=_read, stdin_read=_read, initialize=None):
         restore = 0
     try:
         if initialize is not None:
-            initialize()
+            initialize(master_fd)
         _copy(master_fd, master_read, stdin_read)
     except OSError:
         if restore:
